@@ -1,0 +1,117 @@
+.header{
+    z-index: 995;
+    left: 0;
+    right: 0;
+    background-color: var(--border-input);
+    box-shadow: 0px 2px 2px var(--inner-screen);
+
+    
+    @media screen and (min-width:320px) {
+        position: relative;
+}
+    @media screen and (min-width:768px) {
+        position: fixed;
+}
+}
+
+.is-none{
+    display: block;
+}
+
+.header_div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+//logo section
+.logo_img{
+    height: 80px;
+}
+
+//navigation section
+.nav_link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+
+    color: var(--bg-color);
+
+    text-decoration: none;
+
+    transition: cubic-bezier(0.4, 0, 0.2, 1);;
+    transition-duration: .25s;
+    transition-property:  color;
+}
+
+.nav_list{
+    @media screen and (min-width:320px) {
+        display: none;
+}
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-left: 45px;
+}
+@media screen and (min-width:1200px) {
+    margin-left: 30px;
+    margin-left: 125px;
+}
+}
+
+.nav_item + .nav_item{
+
+    @media screen and (min-width:768px) {
+        margin-left: 10px;
+}
+@media screen and (min-width:1200px) {
+    margin-left: 30px;
+}
+}
+
+.current_page{
+    color: var(--hover-color);
+    display: block;
+    position: relative;
+&::after{
+    content: "";
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--hover-color);
+
+    margin-top: 30px;
+}
+}
+
+//contact section
+.contact_list{
+    display: flex;
+    margin-left: auto;
+}
+
+.contact_link{
+    display: flex;
+    align-items: center;
+    color: var(--team-bg);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);;
+    transition-duration: .25s;
+    transition-property:  fill, color;
+&:hover, &:focus{
+    fill: var(--hover-color);
+}
+}
+
+.contact_item + .contact_item{
+    margin-left: 30px;
+}
+
+.contact_image{
+    margin-right: 8px;
+}

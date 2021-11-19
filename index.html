@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="shortcut icon" href="./images/icon.png">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Signika:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Sunny Desire</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header_div">
+            <a href="#" class="logo_link" rel="noopener noreferrer"><img src="./images/logo.png"
+                    alt="Header_logo" class="logo_img"></a>
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="index.html" class="nav_link current_page">Main</a>
+                </li>
+                <li class="nav_item">
+                    <a href="./ololo.html" rel="noopener noreferrer" class="nav_link">Ololo</a>
+                </li>
+                <li class="nav_item">
+                    <a href="./azaza.html" class="nav_link" rel="noopener noreferrer">Azaza</a>
+                </li>
+                <li class="nav_item">
+                    <a href="./azaza.html" class="nav_link" rel="noopener noreferrer">Hello</a>
+                </li>
+                <li class="nav_item">
+                    <a href="./azaza.html" class="nav_link" rel="noopener noreferrer">World</a>
+                </li>
+                <li class="nav_item">
+                    <a href="./azaza.html" class="nav_link" rel="noopener noreferrer">Lorem</a>
+                </li>
+            </ul>
+            <button class="reserve_btn">Reserve</button>
+
+             <!--Бургер от планшета-->
+             <button class="open_menu_btn">
+                 <svg class = "menu_btn_icon" width = "30px" height = "30px" aria-label="toggle menu">
+                    <use class="openMenu" href = "./images/act.svg#icon-burg"></use>
+                    <use class="closeMenu" width="30px" height = "30px" href = "./images/act.svg#icon-x"></use>
+                 </svg>
+             </button>
+             <div class="mobile_menu is-open">
+                 <!--Mobile nav-->
+                <ul class="mobile_nav_list">
+                    <li class="mobile_nav_item">
+                        <a href="index.html" class="mobile_nav_link">Main</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                        <a href="./ololo.html" rel="noopener noreferrer" class="mobile_nav_link">Ololo</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                        <a href="./azaza.html" class="mobile_nav_link" rel="noopener noreferrer">Azaza</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                        <a href="./azaza.html" class="mobile_nav_link" rel="noopener noreferrer">Hello</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                        <a href="./azaza.html" class="mobile_nav_link" rel="noopener noreferrer">World</a>
+                    </li>
+                    <li class="mobile_nav_item">
+                        <a href="./azaza.html" class="mobile_nav_link" rel="noopener noreferrer">Lorem</a>
+                    </li>
+                </ul>
+                <!--mobile contact-->
+                <ul class="mobile_contact_list">
+                    <li class="mobile_contact_item">
+                        <a href="" class="footerContact_link">+3(80)682034139</a>
+                    </li>
+                    <li class="mobile_contact_item">
+                        <a href="" class="footerContact_link">sunnydesire@gmail.com</a>
+                    </li>
+                </ul>
+                <!--mobile network-->
+                <ul class="mobile_network_list">
+                    <li class="mobile_network_item">
+                        <a href="" class="mobile_network_link">Instagram</a>
+                    </li>
+                    <li class="mobile_network_item">
+                        <a href="" class="mobile_network_link">Facebook</a>
+                    </li>
+                    <li class="mobile_network_item">
+                        <a href="" class="mobile_network_link">GitHub</a>
+                    </li>
+                    <li class="mobile_network_item">
+                        <a href="" class="mobile_network_link">Twitter</a>
+                    </li>
+                </ul>
+             </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero_block">
+            <div class="container">
+                <h1 class="hero_title">Discover <span class="hotel_name_span">Sunny Desire</span></h1>
+                <button class="reserve_btn res_mobile">Reserve</button>
+            </div>
+            <div class="hero_form">
+                <select name="Hotel" id="hotel_selection">
+                    <option>Select Hotel</option>
+                </select>
+                <input type="date" class="starter_date date" value="2022-02-22">
+                <input type="date" class="finish_date date" value="2022-02-23">
+                <select name="AdultCount" id="adult_count">
+                    <option>Count of Adult</option>
+                </select>
+                <select name="LichinkaCount" id="lichinka_count">
+                    <option>Count of Children</option>
+                </select>
+                <button class="her_btn">Order now</button>
+            </div>
+        </section>
+        <section class="advantage_block">
+            <div class="container">
+                <h2 class="section_title"> Our advantages</h2>
+                <ul class="advantage_list">
+                    <li class="advantage_item">
+                        <div class="advantage_image_cover_div">
+                            <img src="./images/box1.jpg" alt="advantage_price" class="advantage_img">
+                            <div class="advantage_title_div">
+                                <h3 class="advantage_image_title">Who has the best prices?</h3>
+                            </div>
+                        </div>
+                        <button class="readmore1 read">Read More...</button>
+                        <p class="advantageText t1">
+                            <b>The</b> sea moderates Earth's climate and has important roles in the water cycle, carbon cycle,
+                            and nitrogen cycle. Humans harnessing and studying the sea have been recorded since ancient
+                            times, and evidenced well into prehistory, while its modern scientific study is called.
+                        </p>
+                    </li>
+                    
+                    <li class="advantage_item">
+                        <div class="advantage_image_cover_div">
+                            <img src="./images/box2.jpg" alt="advantage_comfort" class="advantage_img">
+                            <div class="advantage_title_div">
+                                <h3 class="advantage_image_title">Who has the most comfortable rooms?</h3>
+                            </div>
+                        </div>
+                        <button class="readmore2 read">Read More...</button>
+                        <p class="advantageText t2">
+                            <b>The</b> sea moderates Earth's climate and has important roles in the water cycle, carbon cycle,
+                            and nitrogen cycle.
+                        </p>
+                    </li>
+                    <li class="advantage_item">
+                        <div class="advantage_image_cover_div">
+                            <img src="./images/box3.jpg" alt="advantage_company" class="advantage_img">
+                            <div class="advantage_title_div">
+                                <h3 class="advantage_image_title">Who is loyal to all customers?</h3>
+                            </div>
+                        </div>
+                        <button class="readmore3 read">Read More...</button>
+                        <p class="advantageText t3">
+                            <b>The</b> sea moderates Earth's climate and has important roles in the water cycle, carbon cycle,
+                            and nitrogen cycle. Humans harnessing and studying the sea have been recorded since ancient
+                            times, and evidenced well into prehistory, while its modern scientific study is called.
+
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="space1">
+        </section>
+        <section class="service_block">
+            <div class="container">
+                <h2 class="section_title">Our services</h2>
+                <ul class="service_list">
+                    <li class="service_item">
+                        <div class="service_overlay">
+                            <img src="./images/card-1.jpg" alt="boxes" class="service_image">
+                            <p class="overlay_paragraph">Sharm El-Sheikh is regarded as 
+                                one of the top touristic spots in Egypt. Situated on the southern
+                                 tip of the Sinai Peninsula on the Red Sea, it is home to dramatic
+                                 sert terrains perfectly contrasted with clear blue water, and a
+                                  year-round temperate climate. It is known for its rich diving sites; 
+                            </p>
+                        </div>
+                        <div class="image_title">
+                            <h3 class="prod_name">Massage</h3>
+                            <button class="service_btn">Read more...</button>
+                        </div>
+                    </li>
+                    <li class="service_item">
+                        <div class="service_overlay">
+                            <img src="./images/card-2.jpg" alt="boxes" class="service_image">
+                            <p class="overlay_paragraph">Sharm El-Sheikh is regarded as 
+                                one of the top touristic spots in Egypt. Situated on the southern
+                                 tip of the Sinai Peninsula on the Red Sea, it is home to dramatic
+                                 sert terrains perfectly contrasted with clear blue water, and a
+                                  year-round temperate climate. It is known for its rich diving sites; 
+                            </p>
+                        </div>
+                        <div class="image_title">
+                            <h3 class="prod_name">Swiming Pool</h3>
+                            <button class="service_btn">Read more...</button>
+                        </div>
+                    </li>
+                    <li class="service_item">
+                        <div class="service_overlay">
+                            <img src="./images/card-3.jpg" alt="boxes" class="service_image">
+                            <p class="overlay_paragraph">Sharm El-Sheikh is regarded as 
+                                one of the top touristic spots in Egypt. Situated on the southern
+                                 tip of the Sinai Peninsula on the Red Sea, it is home to dramatic
+                                 sert terrains perfectly contrasted with clear blue water, and a
+                                  year-round temperate climate. It is known for its rich diving sites; 
+                            </p>
+                        </div>
+                        <div class="image_title">
+                            <h3 class="prod_name">Aquaperk</h3>
+                            <button class="service_btn">Read more...</button>
+                        </div>
+                    </li>
+                    <li class="service_item">
+
+                        <div class="service_overlay">
+                            <img src="./images/card-4.jpg" alt="boxes" class="service_image">
+                            <p class="overlay_paragraph">Sharm El-Sheikh is regarded as 
+                                one of the top touristic spots in Egypt. Situated on the southern
+                                 tip of the Sinai Peninsula on the Red Sea, it is home to dramatic
+                                 sert terrains perfectly contrasted with clear blue water, and a
+                                  year-round temperate climate. It is known for its rich diving sites; 
+                            </p>
+                        </div>
+                        <div class="image_title">
+                            <h3 class="prod_name">Gamez</h3>
+                            <button class="service_btn">Read more...</button>
+                        </div>
+                    </li>
+                    <li class="service_item">
+                        <div class="service_overlay">
+                            <img src="./images/card-5.jpg" alt="boxes" class="service_image">
+                            <p class="overlay_paragraph">Sharm El-Sheikh is regarded as 
+                                one of the top touristic spots in Egypt. Situated on the southern
+                                 tip of the Sinai Peninsula on the Red Sea, it is home to dramatic
+                                 sert terrains perfectly contrasted with clear blue water, and a
+                                  year-round temperate climate. It is known for its rich diving sites; 
+                            </p>
+                        </div>
+                        <div class="image_title">
+                            <h3 class="prod_name">Disco</h3>
+                            <button class="service_btn">Read more...</button>
+                        </div>
+                    </li>
+                    <li class="service_item">
+                        <div class="service_overlay">
+                            <img src="./images/card-6.jpg" alt="boxes" class="service_image">
+                            <p class="overlay_paragraph">Sharm El-Sheikh is regarded as 
+                                one of the top touristic spots in Egypt. Situated on the southern
+                                 tip of the Sinai Peninsula on the Red Sea, it is home to dramatic
+                                 sert terrains perfectly contrasted with clear blue water, and a
+                                  year-round temperate climate. It is known for its rich diving sites; 
+                            </p>
+                        </div>
+                        <div class="image_title">
+                            <h3 class="prod_name">Born to rise desert</h3>
+                            <button class="service_btn">Read more...</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+            <!--Тут типо и карту в футер захерачу-->
+        <section class="gallery">
+            <div class="container">
+                <h2 class="section_title">Gallery</h2>
+                <div class="gallery_cover">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 6</div>
+                        <img class="big" src="./images/gallery/hram1280.jpg">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 6</div>
+                        <img class="big" src="./images/gallery/woman1280.jpg">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 6</div>
+                        <img class="big" src="./images/gallery/bokal1280.jpg">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 6</div>
+                        <img class="big" src="./images/gallery/party1280.jpg">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 6</div>
+                        <img class="big" src="./images/gallery/hotel1280.jpg">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">6 / 6</div>
+                        <img class="big" src="./images/gallery/pyramid1280.jpg">
+                    </div>
+                  
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+            
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                  
+                   
+                    <div class="row">
+                      <div class="column">
+                        <img class="demo cursor small" src="./images/gallery/hram640.jpg" onclick="currentSlide(1)" alt="The Temple">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor small" src="./images/gallery/woman640.jpg" onclick="currentSlide(2)" alt="Happy woman jump">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor small" src="./images/gallery/bokal640.jpg" onclick="currentSlide(3)" alt="Alcohol sand and water">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor small" src="./images/gallery/party640.jpg" onclick="currentSlide(4)" alt="Noname band concert">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor small" src="./images/gallery/hotel640.jpg" onclick="currentSlide(5)" alt="Wierd building">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor small" src="./images/gallery/pyramid640.jpg" style="width:100%" onclick="currentSlide(6)" alt="Pyramids and him">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="space">
+    </main>
+    <footer class="footer">
+        <div class="container footer_div">
+            <div class="footer_first_block">
+                <a href="#" class="logo_link"><img src="./images/logo.png" alt="FooterLogo" class="FooterLogo logo_img"></a>
+            </div>
+            <div class="footer_second_block">
+                <ul class="network_list">
+                    <li class="network_item">
+                        <a href="" class="network_link">
+                            <svg class="network_icon" height = "24px" width = "24px">
+                                <use href = './images/symbol-defs.svg#icon-instagram'></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="network_item">
+                        <a href="" class="network_link">
+                            <svg class="network_icon" height = "24px" width = "24px">
+                                <use href = './images/symbol-defs.svg#icon-facebook'></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="network_item">
+                        <a href="" class="network_link">
+                            <svg class="network_icon" height = "24px" width = "24px">
+                                <use href = './images/symbol-defs.svg#icon-github'></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="network_item">
+                        <a href="" class="network_link">
+                            <svg class="network_icon" height = "24px" width = "24px">
+                                <use href = './images/symbol-defs.svg#icon-twitter'></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footerContact_list">
+                    <li class="footerContact_item">
+                        <a href="" class="footerContact_link">+3(80)682034139</a>
+                    </li>
+                    <li class="footerContact_item">
+                        <a href="" class="footerContact_link">sunnydesire@gmail.com</a>
+                    </li>
+                </ul>
+                <address class="address">Ukraine, Snihurivka, South str.</address> 
+            </div>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d198.02375238721504!2d25.61516349386963!3d49.55186174351302!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd9ef5eebd75ddac!2sApteka%20%22Liky%20Zdorovoyi%20Natsiyi%22!5e0!3m2!1sru!2sua!4v1634312378552!5m2!1sru!2sua"
+             width="300" height="250" loading="lazy">
+            </iframe>
+        </div>
+    </footer>
+    <!--Модалка отдельно-->
+    <div class="backdrop is-hidden">
+        <div class="modal__block">
+            <button class="closeModal__button">
+                <svg class="closeModal__icon">
+                    <use href="./images/act.svg#icon-x"></use>
+                </svg>
+            </button>
+            <form class="form__modal" autocomplete="off">
+                <h4 class="form__title">Оставьте свои данные, мы вам перезвоним</h4>
+                <div class="form__field">
+                    <label class="formInput__label name">Имя
+                        <svg class="formInput__icon">
+                            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                        </svg>
+                        <input type="text" class="form__input" required name="userName">
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label class="formInput__label">Телефон
+                        <svg class="formInput__icon">
+                            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                        <input type="tel" class="form__input" required name="userPhone">
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label class="formInput__label">Почта
+                        <svg class="formInput__icon">
+                            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                        </svg>
+                        <input type="email" class="form__input" required name="userMail">
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label for="area" class="formInput__label">Комментарий</label>
+                    <textarea name="area" id="area" cols="30"  class="area"
+                        placeholder="Введите текст"></textarea>
+                </div>
+                    <label class="check__label">
+                        <input type="checkbox" class="check__input" name="userPact">
+                        <span class="check__icon"></span>
+                        <span class="acces__text"> Соглашаюсь с рассылкой и принимаю &puncsp;<a href="#" class="pact__link">Условия договора</a>
+                        </span>
+                        
+                    </label>
+                <button class="sendModal__button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <button class="open_callback">
+        <svg class="conv_close">
+            <use href="./images/act.svg#icon-phone"></use>
+        </svg>
+    </button>
+    <div class="callback_cover is-active">
+        <div class="callback">
+            <button class="close_callback">
+                <svg class="conv_close">
+                    <use href="./images/act.svg#icon-x"></use>
+                </svg>
+            </button>
+            <input type="tel" class="callback_userName">
+            <textarea name="texs" id="callback_text" cols="30" rows="10"></textarea>
+            <button class="callback_btn">Call me</button>
+        </div>
+    </div>
+    <div class="popup_cover is-active">
+        <div class="popup">
+            <button class="close_pop">
+                <svg class="pop_close">
+                    <use href="./images/act.svg#icon-x"></use>
+                </svg>
+            </button>
+            <img src="./images/popup.jpg" class="popImg" alt="banner">
+        </div>
+    </div>
+    <script src="./js/buttons.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+
+</html>

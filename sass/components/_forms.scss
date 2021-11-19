@@ -1,0 +1,17 @@
+.callback_cover{
+    position: fixed;
+    z-index: 999;
+    bottom: 85px;
+    right: 10px;
+    display: block;
+}
+
+.is-active{
+    display: none;
+}
+
+.callback{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}

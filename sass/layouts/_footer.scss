@@ -1,0 +1,138 @@
+.footer{
+    border-top: 6px solid var(--text-color);
+    box-shadow: -4px 0px 5px var(--text-color);
+    bottom: 0;
+    background-color: var(--svg-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.footer_div{
+    @media screen and(min-width: 320px){
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    @media screen and(min-width: 1200px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+//network list
+.network_list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.network_item + .network_item{
+    margin-left: 25px;
+}
+
+//link
+.network_link{
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hover-color);
+
+    transition: cubic-bezier(0.4, 0, 0.2, 1);;
+    transition-duration: .25s;
+    transition-property:  fill, background-color;
+
+    &:hover .network_icon,&:focus .network_icon{
+        fill: var(--hover-color);
+    }
+
+    &:hover, & :focus{
+        background-color: var(--bg-color);
+    } 
+
+}
+
+.network_icon{
+    fill: var(--bg-color);
+}
+
+.FooterLogo{height: 200px;}
+
+iframe{
+    border: 4px solid white;
+}
+
+.footer_second_block{
+    padding: 10px;
+    @media screen and(min-width: 320px){
+        text-align: center;
+    }
+    @media screen and(min-width: 1200px){
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.footerContact_list{
+    margin-bottom: 30px;
+
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 600;
+
+    @media screen and(min-width: 320px){
+        text-align: center;
+    }
+    @media screen and(min-width: 1200px){
+        text-align: left;
+    }
+}
+
+.footerContact_item + .footerContact_item{
+    margin-top: 20px;
+}
+
+.footerContact_link{
+    color: var(--text-color);
+}
+
+address{
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 600;
+
+    @media screen and(min-width: 320px){
+        text-align: center;
+    }
+    @media screen and(min-width: 1200px){
+        text-align: left;
+    }
+}
+
+.FooterLogo{
+    @media screen and(min-width: 320px){
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    @media screen and(min-width: 1200px){
+        margin-right: 50px;
+    }
+}
+
+iframe{
+    @media screen and(min-width: 320px){
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media screen and(min-width: 1200px){
+        margin-right: 0px;
+    }
+}

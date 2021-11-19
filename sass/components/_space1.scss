@@ -1,0 +1,15 @@
+.space1{
+    height: 100vh;
+    background-image: linear-gradient(to left, var(--gradient-color)40%,
+    var(--gradient-color)100%),
+url('.././images/space1.webp');
+background-attachment: fixed;
+background-size: cover;
+
+@media screen and (min-width:320px) {
+    display: none;
+}
+@media screen and (min-width:768px) {
+    display: block;
+}
+}

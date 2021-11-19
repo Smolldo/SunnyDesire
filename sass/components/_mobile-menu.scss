@@ -1,0 +1,147 @@
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.mobile_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 7;
+    margin: 0;
+    background-color: var(--body-white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    @media screen and(min-width:320px) {
+        padding-left: 15px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    @media screen and(min-width:480px) {
+        padding-left: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    }
+   @media screen and(min-width:768px) {
+       display: none;
+   }
+}
+
+.mobile_nav_list{
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile_nav_item + .mobile_nav_item{
+    margin-top: 15px;
+}
+
+.mobile_contact_list{
+    flex-grow: 2;
+    margin-top: 20px;
+}
+
+.mobile_contact_item + .mobile_contact_item{
+    margin-top: 20px;
+}
+
+.mobile_contact_item{
+    font-size: 22px;
+    line-height: 23px;
+}
+
+.mobile_menu.is-open{
+    display: none;
+}
+
+.mobile_nav_link{
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.open_menu_btn{
+   position: absolute;
+   z-index: 99;
+   top: 23px;
+   right: 30px;
+   border: none;
+   background-color: transparent;
+   fill: var(--hover-color);
+   transition: cubic-bezier(0.4, 0, 0.2, 1);;
+transition-duration: .25s;
+transition-property:  fill;
+
+    &:hover, &:focus {
+        fill: var(--overlay-bg-color);
+    }
+
+    @media screen and (min-width:320px) {
+        display: block;
+}
+
+
+    @media screen and (min-width:768px) {
+        display: none;
+}
+}
+
+.open_menu_btn .closeMenu{
+    display: none;
+}
+
+.open_menu_btn .closeMenu {
+    display: none;
+}
+
+.open_menu_btn.is-open .closeMenu{
+    display: block;
+}
+
+.open_menu_btn.is-open .openMenu{
+    display: none;
+}
+
+.mobile_network_list{
+    display: flex;
+}
+
+.mobile_network_link{
+    
+    letter-spacing: .01em;
+    color: var(--hover-color);
+    font-weight: 500;
+
+    @media screen and(min-width:320px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    @media screen and(min-width:480px) {
+        font-size: 18px;
+    line-height: 22px;
+    }
+   @media screen and(min-width:768px) {
+       display: none;
+   }
+}
+
+.mobile_network_item + .mobile_network_item{
+    margin-left: 10px;
+
+    border-left: 2px solid var(--alter-text);
+    padding-left: 10px;
+}

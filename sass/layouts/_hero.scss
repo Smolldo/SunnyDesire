@@ -1,0 +1,64 @@
+.hero_block{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+    padding: 0;
+    max-width: 1600px;
+
+    margin: auto;
+
+    background-color: var(--inner-screen);
+    padding-top: 200px;
+    padding-bottom: 196px;
+
+
+    background-image: linear-gradient(to left, var(--gradient-color)40%,
+            var(--gradient-color)100%),
+        url('https://lirp.cdn-website.com/59e98db6/dms3rep/multi/opt/beach+11-2880w.jpg');
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+//hero form
+
+.hero_form{
+    border: 2px solid var(--text-color);
+    box-shadow: 0px 3px 3px var(--text-color);
+
+    position: absolute;
+    bottom: -35px;
+
+    padding: 20px;
+    background-color: var(--team-bg);
+    border-radius: 20px;
+
+    @media screen and (min-width:320px) {
+        display: none;
+}
+    @media screen and (min-width:768px) {
+        display: block;
+}
+}
+
+select{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--input-color);
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.date{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--input-color);
+    font-weight: 600;
+    margin-right: 10px;
+}

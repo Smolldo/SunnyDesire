@@ -1,0 +1,45 @@
+.open_callback{
+    width: 56px;
+    height: 56px;
+
+    border:none;
+    border-radius: 50%;
+    background:var(--hover-color);
+    padding:7px;
+    position:fixed;
+    bottom:20px;
+    right:10px;
+    z-index: 85;
+    box-shadow: 0 2px 2px var(--logo-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: cubic-bezier(0.4, 0, 0.2, 1);;
+    transition-duration: .25s;
+    transition-property:  fill, transform;
+
+    &:hover{
+        cursor:pointer;
+        transform: scale(1.1);
+        fill: var(--bg-color);
+    }
+}
+
+.conv_close{
+    width: 28px;
+    height: 28px;
+}
+
+.callback{
+    z-index: 666;
+    padding: 15px;
+    border-radius: 24px;
+    border-bottom-right-radius: 0;
+    background-color: var(--svg-color);
+}
+
+.callback_userName{
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
